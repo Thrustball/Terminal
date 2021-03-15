@@ -9,7 +9,8 @@ int main() {
 	// char c = ' ';
 	termlib te(80,23);
 	te.fillScreen(' ');
-	te.circle(40,10,7,0.6,'O');
+	te.rect(10, 5, 70, 20, '#');
 	te.draw();
+
 	return 0;
 }

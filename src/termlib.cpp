@@ -1,10 +1,3 @@
-/*
- * termlib.cpp
- *
- *  Created on: 06.03.2021
- *      Author: florian
- */
-
 #include "termlib.h"
 
 

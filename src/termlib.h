@@ -1,10 +1,3 @@
-/*
- * termlib.h
- *
- *  Created on: 06.03.2021
- *      Author: florian
- */
-
 #ifndef SRC_TERMLIB_H_
 #define SRC_TERMLIB_H_
 #define PI 3.141592653589
