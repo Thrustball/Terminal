@@ -123,7 +123,7 @@ void termlib::circle(int x, int y, int r, float yMod, char c) {
 		rad = (PI * (float)i) / 180.0f;
 		xc = (int) round((float)r * cos(rad));
 		yc = (int) round((float)r * sin(rad) * yMod);
-		checkIfInScreen(xc,yc);
+		checkIfInScreen(x+xc,y+yc);
 		screen[x+xc][y+yc] = c;
 	}
 
@@ -131,10 +131,10 @@ void termlib::circle(int x, int y, int r, float yMod, char c) {
 
 void termlib::checkIfInScreen(int x, int y) {
 	if(x >= rows || x < 0) {
-		printf("X Coordinate outside screen!\n");
+		printf("X Coordinate outside screen! (%d)\n", x);
 		exit(1);
 	} else if (y >= columns || y < 0) {
-		printf("Y Coordinate outside screen!\n");
+		printf("Y Coordinate outside screen! (%d)\n", y);
 		exit(1);
 	}
 }
